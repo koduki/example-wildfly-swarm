@@ -5,20 +5,20 @@
  */
 package cn.orz.pascal.example.wilfly.swarm.domain;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;
-
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 
 @ApplicationScoped
 public class EmployeeService {
 
+    @Inject
+    EntityManager em;
+
     public List<Employee> findAll() {
-        return new ArrayList<Employee>() {{
-            add(new Employee(1L, "emp01"));
-            add(new Employee(2L, "emp02"));
-        }};
+        return em.createQuery("SELECT e FROM Employee e", Employee.class).getResultList();
     }
 
 }

@@ -1,0 +1,6 @@
+INSERT INTO Employee("ID", "NAME") VALUES (1, 'Nanoha')
+INSERT INTO Employee("ID", "NAME") VALUES (2, 'Fate')
+INSERT INTO Employee("ID", "NAME") VALUES (3, 'Hayate')
+INSERT INTO Employee("ID", "NAME") VALUES (4, 'Arisa')
+INSERT INTO Employee("ID", "NAME") VALUES (5, 'Suzuka')
+INSERT INTO Employee("ID", "NAME") VALUES (6, 'Arisia')

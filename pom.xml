@@ -20,24 +20,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.wildfly.swarm</groupId>
-            <artifactId>wildfly-swarm-weld-jaxrs</artifactId>
-            <version>${version.wildfly-swarm}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.4</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.wildfly.swarm</groupId>
                 <artifactId>wildfly-swarm-plugin</artifactId>
+                <version>${version.wildfly-swarm}</version>
                 <configuration>
                     <mainClass>cn.orz.pascal.example.wilfly.swarm.Main</mainClass>
                 </configuration>
@@ -52,5 +40,30 @@
         </plugins>
     </build>
   
+    <dependencies>
+        <!-- JavaEE Components -->
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>wildfly-swarm-weld-jaxrs</artifactId>
+            <version>${version.wildfly-swarm}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>wildfly-swarm-jpa</artifactId>
+            <version>${version.wildfly-swarm}</version>
+        </dependency>
+    
+        <!-- Other Libraries -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.187</version>
+        </dependency>
+    </dependencies>
 </project>
 

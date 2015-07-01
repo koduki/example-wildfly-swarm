@@ -4,7 +4,7 @@
 
     <groupId>cn.orz.pascal</groupId>
     <artifactId>example-wilfly-swarm</artifactId>
-    <version>1.0.0.Alpha03-SNAPSHOT</version>
+    <version>0.1</version>
     <packaging>jar</packaging>
 
     <name>example-wilfly-swarm</name>
@@ -39,7 +39,7 @@
                 <groupId>org.wildfly.swarm</groupId>
                 <artifactId>wildfly-swarm-plugin</artifactId>
                 <configuration>
-                    <mainClass>org.wildfly.swarm.examples.jaxrs.shrinkwrap.Main</mainClass>
+                    <mainClass>cn.orz.pascal.example.wilfly.swarm.Main</mainClass>
                 </configuration>
                 <executions>
                     <execution>
